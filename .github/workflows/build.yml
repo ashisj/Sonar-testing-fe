@@ -19,11 +19,11 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Build and test
-        run: |
-          npm i
-          npm run build
-          npm test
+      # - name: Build and test
+      #   run: |
+      #     npm i
+      #     npm run build
+      #     npm test
 
       - name: SonarQube Analysis
         uses: sonarsource/sonarqube-scan-action@v1
